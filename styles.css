@@ -9752,8 +9752,8 @@ body.accessibility-widget-visible ._access-menu {
 }
 
 .lbs-connect-section .lbs-connect-grid {
-  grid-template-columns: repeat(2, 1fr) !important;
-  --zappy-grid-cols: repeat(2, 1fr) !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  --zappy-grid-cols: repeat(3, 1fr) !important;
 }
 
 .lbs-connect-section .lbs-connect-card {
