@@ -1,39 +1,53 @@
-# Business — Generative Engine Optimization Map
+# Liron Barber Shop — Generative Engine Optimization Map
+
+> Liron Barber Shop is a barbershop brand with a bold black-and-white aesthetic, conveying a classic, clean, and professional atmosphere. The business emphasizes convenience through online appointment booking, suggesting a modern approach to traditional barbering services.
 
 ---
 
 ## Pages
 
 ### בית
-https://example.com
+https://liron-barber-shop.zappy5.app
 ברוכים הבאים ל-Liron Barber Shop – המספרה הקלאסית עם המגע המודרני. קבע תור אונליין עכשיו ותגלה תספורות גברים מקצועיות באווירה נקייה ומסוגננת.
 
 ### צור קשר
-https://example.com/contact
+https://liron-barber-shop.zappy5.app/contact
 רוצים להגיע? קבעו תור אונליין בשניות, שלחו הודעה או בואו ישירות. Liron Barber Shop מחכה לכם עם שירות חם, מהיר ומקצועי שמתאים לכל לוח זמנים.
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://example.com/privacy
+https://liron-barber-shop.zappy5.app/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://example.com/terms
+https://liron-barber-shop.zappy5.app/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://example.com/accessibility
+https://liron-barber-shop.zappy5.app/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
 
 # Business Context (for LLM understanding)
 
-## About Business
+## About Liron Barber Shop
+Liron Barber Shop is a barbershop brand with a bold black-and-white aesthetic, conveying a classic, clean, and professional atmosphere. The business emphasizes convenience through online appointment booking, suggesting a modern approach to traditional barbering services.
+
+## Services/Products
+- תספורות
+- קביעת תורים
+
+## Target Audience
+- מחפשי תורים אונליין
+
+## Industry
+טיפוח וספרות
+
 ---
 
 # Additional Resources
 
-- **Sitemap**: https://example.com/sitemap.xml
-- **Robots.txt**: https://example.com/robots.txt
+- **Sitemap**: https://liron-barber-shop.zappy5.app/sitemap.xml
+- **Robots.txt**: https://liron-barber-shop.zappy5.app/robots.txt
