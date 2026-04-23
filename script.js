@@ -718,63 +718,6 @@ window.onload = function() {
 })();
 
 
-/* Added Component Script */
-(function () {
-  // Map JS day index (0=Sun) to list item index in our list
-  const dayMap = {
-    0: 0, // ראשון
-    1: 1, // שני
-    2: 2, // שלישי
-    3: 3, // רביעי
-    4: 4, // חמישי
-    5: 5, // שישי
-    6: 6  // שבת
-  };
-
-  const schedule = [
-    { name: 'ראשון',  open: true,  from: 9,  to: 20 },
-    { name: 'שני',    open: true,  from: 9,  to: 20 },
-    { name: 'שלישי', open: true,  from: 9,  to: 20 },
-    { name: 'רביעי', open: true,  from: 9,  to: 20 },
-    { name: 'חמישי', open: true,  from: 9,  to: 21 },
-    { name: 'שישי',  open: true,  from: 8,  to: 15 },
-    { name: 'שבת',   open: false, from: 0,  to: 0  }
-  ];
-
-  const now = new Date();
-  const todayIndex = now.getDay(); // 0 = Sunday
-  const currentHour = now.getHours() + now.getMinutes() / 60;
-
-  // Highlight today's row
-  const dayItems = document.querySelectorAll('.lbs-cs-day');
-  if (dayItems[todayIndex]) {
-    dayItems[todayIndex].classList.add('is-today');
-  }
-
-  // Today bar message
-  const todayBar = document.getElementById('lbs-today-bar');
-  const todayText = document.getElementById('lbs-today-text');
-  const todayDot = document.querySelector('.lbs-cs-today-dot');
-  const todayData = schedule[todayIndex];
-
-  if (todayData) {
-    if (!todayData.open) {
-      todayText.textContent = 'היום הספרייה סגורה — שבת שלום 🙏';
-      if (todayDot) todayDot.classList.add('closed-dot');
-    } else if (currentHour >= todayData.from && currentHour < todayData.to) {
-      const closeHour = todayData.to;
-      const hoursLeft = Math.floor(todayData.to - currentHour);
-      todayText.textContent = `🟢 פתוח עכשיו — סוגרים ב-${closeHour}:00 (עוד ~${hoursLeft} שעות)`;
-    } else if (currentHour < todayData.from) {
-      todayText.textContent = `⏰ נפתח היום ב-${todayData.from}:00 — ${todayData.name}`;
-    } else {
-      todayText.textContent = `הספרייה נסגרה היום — נתראה מחר! ✂️`;
-      if (todayDot) todayDot.classList.add('closed-dot');
-    }
-  }
-})();
-
-
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
   try {
