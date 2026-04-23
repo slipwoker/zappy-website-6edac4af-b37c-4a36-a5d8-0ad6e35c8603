@@ -9750,6 +9750,15 @@ body.accessibility-widget-visible ._access-menu {
     font-size: 1.9rem;
   }
 }
+
+.lbs-connect-section .lbs-connect-grid {
+  grid-template-columns: repeat(2, 1fr) !important;
+  --zappy-grid-cols: repeat(2, 1fr) !important;
+}
+
+.lbs-connect-section .lbs-connect-card {
+  transform: none !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
