@@ -343,7 +343,7 @@
     </svg>
   </button>
 
-  <button class="phone-header-btn" data-phone="" aria-label="Call">
+  <button class="phone-header-btn" data-phone="0549256042" aria-label="Call">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
@@ -746,7 +746,7 @@
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
         const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
-          : '[business_phone]';
+          : '054-9256042';
         
         window.location.href = 'tel:' + phoneNumber;
         console.log('[Navbar] Phone button clicked');
@@ -915,7 +915,7 @@
       </a>
 
       <!-- Instagram -->
-      <a href="https://www.instagram.com/lironbarbershop" target="_blank" rel="noopener noreferrer" class="lbs-connect-card lbs-card-instagram" aria-label="עקוב אחרינו באינסטגרם" data-grid-item-index="1">
+      <a href="https://instagram.com/lironbarbershop" target="_blank" rel="noopener noreferrer" class="lbs-connect-card lbs-card-instagram" aria-label="עקוב אחרינו באינסטגרם" data-grid-item-index="1">
         <br>
           <svg class="lbs-card-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="cursor: pointer;">
             <defs>
@@ -938,7 +938,7 @@
       </a>
 
       <!-- TikTok -->
-      <a href="https://www.tiktok.com/@lironbarbershop" target="_blank" rel="noopener noreferrer" class="lbs-connect-card lbs-card-tiktok" aria-label="עקוב אחרינו בטיקטוק" data-grid-item-index="2">
+      <a href="https://tiktok.com/@lironbarbershop" target="_blank" rel="noopener noreferrer" class="lbs-connect-card lbs-card-tiktok" aria-label="עקוב אחרינו בטיקטוק" data-grid-item-index="2">
         <br>
           <svg class="lbs-card-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="cursor: pointer;">
             <rect x="3" y="3" width="26" height="26" rx="7" fill="#010101"></rect>
@@ -989,9 +989,9 @@
         </a>
         <p class="footer-tagline">סטייל מדויק. חוויה פרימיום.<br>ספרות שמדברת בעד עצמה.</p>
         <div class="footer-social">
-          <a href="[facebook_handle]" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="[instagram_handle]" aria-label="Instagram"></a>
-          <a href="[whatsapp_handle]" aria-label="WhatsApp"></a>
+          <a href="#" aria-label="Facebook" style="display:none !important;"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/lironbarbershop" aria-label="Instagram"></a>
+          <a href="https://wa.me/972500000000" aria-label="WhatsApp"></a>
         </div>
       </div>
 
@@ -1008,14 +1008,22 @@
             <span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1776943619099-uyrenqsui" data-icon-type="fontawesome" style="cursor: pointer;"></i></span>
             <span class="contact-text"><br></span></li><li>
             <span class="contact-icon"><i class="fas fa-map-marker-alt" style="cursor: pointer;"></i></span>
-            <span class="contact-text"><a href="tel:054-9256042">054-9256042</a><br></span>
+            <span class="contact-text">יהוד, ישראל</span>
           </li></ul>
       </div>
 
       <!-- Column 4: Hours -->
       <div class="footer-col footer-hours">
         <h4 class="footer-heading">שעות פעילות</h4>
-        <ul class="hours-list" ><li><span class="day">ראשון – חמישי</span><span class="time">09:00 – 20:00</span></li><li><span class="day"><br></span></li><li><span class="day">שבת</span><span class="time">סגור</span></li></ul>
+        <ul class="hours-list" >
+          <li><span class="day">יום ראשון</span>&nbsp;<span class="time">10:00 – 20:00</span></li>
+          <li><span class="day">יום שני</span>&nbsp;<span class="time">17:00 – 20:00</span></li>
+          <li><span class="day">יום שלישי</span>&nbsp;<span class="time">סגור</span></li>
+          <li><span class="day">יום רביעי</span>&nbsp;<span class="time">10:00 – 20:00</span></li>
+          <li><span class="day">יום חמישי</span>&nbsp;<span class="time">10:00 – 20:00</span></li>
+          <li><span class="day">יום שישי</span>&nbsp;<span class="time">10:00 – 20:00</span></li>
+          <li><span class="day">יום שבת</span>&nbsp;<span class="time">סגור</span></li>
+        </ul>
       </div>
 
     </div>
@@ -1037,9 +1045,9 @@
 
   </div>
 </footer><i class="fab fa-instagram"></i>
-          <a href=" [whatsapp_handle]' aria-label=" whatsapp"="">
+          <a href="https://wa.me/972500000000" whatsapp"="">
   
-  </a><a href="https://wa.me/[whatsapp_handle]" class="whatsapp-float" aria-label="WhatsApp">
+  </a><a href="https://wa.me/972500000000" class="whatsapp-float" aria-label="WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
   

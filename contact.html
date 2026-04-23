@@ -343,7 +343,7 @@
     </svg>
   </button>
 
-  <button class="phone-header-btn" data-phone="" aria-label="Call">
+  <button class="phone-header-btn" data-phone="0549256042" aria-label="Call">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
@@ -746,7 +746,7 @@
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
         const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
-          : '[business_phone]';
+          : '054-9256042';
         
         window.location.href = 'tel:' + phoneNumber;
         console.log('[Navbar] Phone button clicked');
@@ -832,7 +832,7 @@
           </div>
           <div class="cds-block-content">
             <h3 class="cds-block-label">טלפון</h3>
-            <a href="tel:[business_phone]" class="cds-link">[business_phone]</a>
+            <a href="tel:054-9256042" class="cds-link">054-9256042</a>
             <p class="cds-note">זמינים לשיחות ו-WhatsApp</p>
           </div>
         </div>
@@ -858,7 +858,7 @@
           </div>
           <div class="cds-block-content">
             <h3 class="cds-block-label">WhatsApp</h3>
-            <a href="https://wa.me/[whatsapp_handle]" target="_blank" class="cds-link">שלחו הודעה ישירה</a>
+            <a href="https://wa.me/972500000000" target="_blank" class="cds-link">שלחו הודעה ישירה</a>
             <p class="cds-note">הדרך המהירה לתיאום תור</p>
           </div>
         </div>
@@ -881,8 +881,8 @@
           </div>
           <div class="cds-block-content">
             <h3 class="cds-block-label">כתובת</h3>
-            <p class="cds-address">[business_address]</p>
-            <a href="https://maps.google.com/?q=[business_address]" target="_blank" class="cds-map-btn">
+            <p class="cds-address">יהוד, ישראל</p>
+            <a href="https://maps.google.com/?q=יהוד, ישראל" target="_blank" class="cds-map-btn">
               <span>פתח במפה</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
             </a>
@@ -898,8 +898,10 @@
           <div class="cds-block-content">
             <h3 class="cds-block-label">שעות פעילות</h3>
             <ul class="cds-hours-list">
-              <li><span class="cds-day">ראשון – חמישי</span><span class="cds-time">09:00 – 20:00</span></li>
-              <li><span class="cds-day">שישי</span><span class="cds-time">08:00 – 15:00</span></li>
+              <li><span class="cds-day">ראשון</span><span class="cds-time">10:00 – 20:00</span></li>
+              <li><span class="cds-day">שני</span><span class="cds-time">17:00 – 20:00</span></li>
+              <li><span class="cds-day">שלישי</span><span class="cds-time">סגור</span></li>
+              <li><span class="cds-day">רביעי – שישי</span><span class="cds-time">10:00 – 20:00</span></li>
               <li><span class="cds-day">שבת</span><span class="cds-time">סגור</span></li>
             </ul>
           </div>
@@ -921,10 +923,10 @@
         <div class="cds-social-row">
           <span class="cds-social-label">עקבו אחרינו</span>
           <div class="cds-social-links">
-            <a href="https://instagram.com/[instagram_handle]" target="_blank" class="cds-social-icon" aria-label="אינסטגרם">
+            <a href="https://instagram.com/lironbarbershop" target="_blank" class="cds-social-icon" aria-label="אינסטגרם">
               <svg data-element-type="icon" data-icon-type="svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
             </a>
-            <a href="https://facebook.com/[facebook_handle]" target="_blank" class="cds-social-icon" aria-label="פייסבוק">
+            <a href="#" target="_blank" class="cds-social-icon" aria-label="פייסבוק" style="display:none !important;">
               <svg data-element-type="icon" data-icon-type="svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
             </a>
           </div>
@@ -951,32 +953,32 @@
         <div class="schedule-row">
           <span class="schedule-day">ראשון</span>
           <span class="schedule-separator"></span>
-          <span class="schedule-time">09:00 – 20:00</span>
+          <span class="schedule-time">10:00 – 20:00</span>
         </div>
         <div class="schedule-row">
           <span class="schedule-day">שני</span>
           <span class="schedule-separator"></span>
-          <span class="schedule-time">09:00 – 20:00</span>
+          <span class="schedule-time">17:00 – 20:00</span>
         </div>
-        <div class="schedule-row">
+        <div class="schedule-row schedule-row--closed">
           <span class="schedule-day">שלישי</span>
           <span class="schedule-separator"></span>
-          <span class="schedule-time">09:00 – 20:00</span>
+          <span class="schedule-time schedule-closed">סגור</span>
         </div>
         <div class="schedule-row">
           <span class="schedule-day">רביעי</span>
           <span class="schedule-separator"></span>
-          <span class="schedule-time">09:00 – 20:00</span>
+          <span class="schedule-time">10:00 – 20:00</span>
         </div>
         <div class="schedule-row">
           <span class="schedule-day">חמישי</span>
           <span class="schedule-separator"></span>
-          <span class="schedule-time">09:00 – 21:00</span>
+          <span class="schedule-time">10:00 – 20:00</span>
         </div>
         <div class="schedule-row schedule-row--accent">
           <span class="schedule-day">שישי</span>
           <span class="schedule-separator"></span>
-          <span class="schedule-time">08:00 – 15:00</span>
+          <span class="schedule-time">10:00 – 20:00</span>
           <span class="schedule-badge">עמוס במיוחד</span>
         </div>
         <div class="schedule-row schedule-row--closed">
@@ -1128,7 +1130,7 @@
       <p class="contact-faq-cta-text">עדיין יש לכם שאלות? אנחנו כאן בשבילכם.</p>
       <div class="contact-faq-cta-actions">
         <a href="#contact-form" class="btn-primary contact-faq-btn">שלחו הודעה</a>
-        <a href="tel:[business_phone]" class="btn-secondary contact-faq-btn">
+        <a href="tel:054-9256042" class="btn-secondary contact-faq-btn">
           <i class="fa fa-phone" aria-hidden="true"></i>
           <span>התקשרו עכשיו</span>
         </a>
@@ -1150,9 +1152,10 @@
         </a>
         <p class="footer-tagline">סטייל מדויק. חוויה פרימיום.<br>ספרות שמדברת בעד עצמה.</p>
         <div class="footer-social">
-          <a href="[facebook_handle]" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="[instagram_handle]" aria-label="Instagram"></a>
-          <a href="[whatsapp_handle]" aria-label="WhatsApp"></a>
+          <a href="#" aria-label="Facebook" style="display:none !important;"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/lironbarbershop" aria-label="Instagram"></a>
+          <a href="https://wa.me/972500000000" aria-label="WhatsApp"></a>
+          <a href="https://tiktok.com/@lironbarbershop" aria-label="TikTok" data-element-type="link" data-element-id="element-ai-1776944601081-tk9x2m"><i class="fab fa-tiktok"></i></a>
         </div>
       </div>
 
@@ -1169,14 +1172,20 @@
             <span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1776943619099-uyrenqsui" data-icon-type="fontawesome" style="cursor: pointer;"></i></span>
             <span class="contact-text"><br></span></li><li>
             <span class="contact-icon"><i class="fas fa-map-marker-alt" style="cursor: pointer;"></i></span>
-            <span class="contact-text"><a href="tel:054-9256042">054-9256042</a><br></span>
+            <span class="contact-text">יהוד, ישראל</span>
           </li></ul>
       </div>
 
       <!-- Column 4: Hours -->
       <div class="footer-col footer-hours">
         <h4 class="footer-heading">שעות פעילות</h4>
-        <ul class="hours-list" ><li><span class="day">ראשון – חמישי</span><span class="time">09:00 – 20:00</span></li><li><span class="day"><br></span></li><li><span class="day">שבת</span><span class="time">סגור</span></li></ul>
+        <ul class="hours-list" >
+          <li><span class="day">ראשון</span><span class="time">10:00 – 20:00</span></li>
+          <li><span class="day">שני</span><span class="time">17:00 – 20:00</span></li>
+          <li><span class="day">שלישי</span><span class="time">סגור</span></li>
+          <li><span class="day">רביעי – שישי</span><span class="time">10:00 – 20:00</span></li>
+          <li><span class="day">שבת</span><span class="time">סגור</span></li>
+        </ul>
       </div>
 
     </div>
