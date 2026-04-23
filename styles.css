@@ -9451,6 +9451,305 @@ body.accessibility-widget-visible ._access-menu {
     font-size: 0.82rem;
   }
 }
+
+/* Added Component Styles */
+/* =============================================
+   Liron Barber Shop — Connect & Social Section
+   ============================================= */
+
+.lbs-connect-section {
+  background: var(--primary, #0A0A0A);
+  padding: 80px 20px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  position: relative;
+  overflow: hidden;
+}
+
+.lbs-connect-section::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(36, 195, 255, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Container */
+.lbs-connect-container {
+  max-width: 860px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Header */
+.lbs-connect-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.lbs-connect-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 12px 0;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.lbs-connect-title span {
+  background: var(--gradient-primary, linear-gradient(180deg, #24C3FF 0%, #1EB8F3 100%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.lbs-connect-subtitle {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Grid */
+.lbs-connect-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* Card Base */
+.lbs-connect-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px 22px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.lbs-connect-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  border-radius: inherit;
+}
+
+.lbs-connect-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.lbs-connect-card:focus-visible {
+  outline: 2px solid #24C3FF;
+  outline-offset: 3px;
+}
+
+/* Wide card (review) spans full row */
+.lbs-card-wide {
+  grid-column: 1 / -1;
+}
+
+/* Icon wrapper */
+.lbs-card-icon-wrap {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.07);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.lbs-card-icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* Card Content */
+.lbs-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.lbs-card-label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.lbs-card-desc {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.4;
+}
+
+/* Arrow */
+.lbs-card-arrow {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.3);
+  flex-shrink: 0;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.lbs-connect-card:hover .lbs-card-arrow {
+  color: rgba(255, 255, 255, 0.8);
+  transform: translateX(-4px);
+}
+
+/* Stars */
+.lbs-card-stars {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.lbs-star {
+  font-size: 1.2rem;
+  color: #FFD700;
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+
+.lbs-card-review:hover .lbs-star:nth-child(1) { animation: lbs-star-pop 0.4s ease 0.0s both; }
+.lbs-card-review:hover .lbs-star:nth-child(2) { animation: lbs-star-pop 0.4s ease 0.06s both; }
+.lbs-card-review:hover .lbs-star:nth-child(3) { animation: lbs-star-pop 0.4s ease 0.12s both; }
+.lbs-card-review:hover .lbs-star:nth-child(4) { animation: lbs-star-pop 0.4s ease 0.18s both; }
+.lbs-card-review:hover .lbs-star:nth-child(5) { animation: lbs-star-pop 0.4s ease 0.24s both; }
+
+@keyframes lbs-star-pop {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.45); }
+  100% { transform: scale(1); }
+}
+
+/* ─── WhatsApp ─── */
+.lbs-card-whatsapp:hover {
+  background: rgba(37, 211, 102, 0.12);
+  border-color: rgba(37, 211, 102, 0.4);
+  box-shadow: 0 12px 40px rgba(37, 211, 102, 0.15);
+}
+.lbs-card-whatsapp:hover .lbs-card-icon-wrap {
+  background: rgba(37, 211, 102, 0.15);
+}
+
+/* ─── Instagram ─── */
+.lbs-card-instagram:hover {
+  background: rgba(221, 42, 123, 0.1);
+  border-color: rgba(221, 42, 123, 0.4);
+  box-shadow: 0 12px 40px rgba(221, 42, 123, 0.15);
+}
+.lbs-card-instagram:hover .lbs-card-icon-wrap {
+  background: rgba(221, 42, 123, 0.12);
+}
+
+/* ─── TikTok ─── */
+.lbs-card-tiktok:hover {
+  background: rgba(105, 201, 208, 0.1);
+  border-color: rgba(105, 201, 208, 0.4);
+  box-shadow: 0 12px 40px rgba(105, 201, 208, 0.15);
+}
+.lbs-card-tiktok:hover .lbs-card-icon-wrap {
+  background: rgba(105, 201, 208, 0.12);
+}
+
+/* ─── Maps ─── */
+.lbs-card-maps:hover {
+  background: rgba(66, 133, 244, 0.1);
+  border-color: rgba(66, 133, 244, 0.4);
+  box-shadow: 0 12px 40px rgba(66, 133, 244, 0.15);
+}
+.lbs-card-maps:hover .lbs-card-icon-wrap {
+  background: rgba(66, 133, 244, 0.12);
+}
+
+/* ─── Review ─── */
+.lbs-card-review {
+  background: rgba(255, 215, 0, 0.05);
+  border-color: rgba(255, 215, 0, 0.2);
+}
+.lbs-card-review:hover {
+  background: rgba(255, 215, 0, 0.1);
+  border-color: rgba(255, 215, 0, 0.45);
+  box-shadow: 0 12px 40px rgba(255, 215, 0, 0.12);
+}
+.lbs-card-review:hover .lbs-card-icon-wrap {
+  background: rgba(255, 215, 0, 0.1);
+}
+.lbs-card-review .lbs-card-label {
+  font-size: 1.05rem;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 640px) {
+  .lbs-connect-section {
+    padding: 60px 16px;
+  }
+
+  .lbs-connect-title {
+    font-size: 1.7rem;
+  }
+
+  .lbs-connect-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .lbs-connect-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .lbs-card-wide {
+    grid-column: 1 / -1;
+  }
+
+  .lbs-connect-card {
+    padding: 16px 18px;
+  }
+
+  .lbs-card-icon-wrap {
+    width: 44px;
+    height: 44px;
+  }
+
+  .lbs-card-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .lbs-card-label {
+    font-size: 0.95rem;
+  }
+
+  .lbs-card-stars {
+    display: none;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .lbs-connect-title {
+    font-size: 1.9rem;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
