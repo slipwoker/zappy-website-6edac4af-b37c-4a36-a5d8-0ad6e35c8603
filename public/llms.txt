@@ -1,4 +1,6 @@
-# Business — Generative Engine Optimization Map
+# Liron Barber Shop — Generative Engine Optimization Map
+
+> Liron Barber Shop is a barbershop brand with a bold black-and-white aesthetic, conveying a classic, clean, and professional atmosphere. The business emphasizes convenience through online appointment booking, suggesting a modern approach to traditional barbering services.
 
 ---
 
@@ -30,7 +32,19 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About Business
+## About Liron Barber Shop
+Liron Barber Shop is a barbershop brand with a bold black-and-white aesthetic, conveying a classic, clean, and professional atmosphere. The business emphasizes convenience through online appointment booking, suggesting a modern approach to traditional barbering services.
+
+## Services/Products
+- תספורות
+- קביעת תורים
+
+## Target Audience
+- מחפשי תורים אונליין
+
+## Industry
+טיפוח וספרות
+
 ---
 
 # Additional Resources
